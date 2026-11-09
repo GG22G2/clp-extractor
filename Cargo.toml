@@ -1,0 +1,17 @@
+[package]
+name = "clp"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+lzma-rs = "0.3.0"
+rfd = "0.18.0"
+windows-sys = { version = "0.61.2", features = [
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Console",
+    "Win32_Foundation"
+] }
+
+[[bin]]
+name = "clp"
+path = "src/main.rs"
